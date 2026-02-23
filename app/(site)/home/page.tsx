@@ -5,7 +5,7 @@ import WhatsappBtn from "@/app/components/WhatsappBtn";
 import HeroSlider from "@/app/components/HeroSlider";
 import RoomsSection from "@/app/components/RoomSection";
 import Service from "@/app/components/Services";
-
+import Location from "@/app/components/Location";
 const HERO_IMG =
   "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2400&q=80";
 
@@ -50,35 +50,8 @@ export default function Home() {
 
         {/* SERVICE */}
         <Service/>
-
-        {/* CTA */}
-        <section className="py-16 ">
-          <div className="mx-auto max-w-6xl px-4">
-            <div className="rounded-3xl border p-8 text-white md:p-10">
-              <h2 className="text-3xl font-bold">¿Listo para reservar?</h2>
-              <p className="mt-2 max-w-xl text-white/80">
-                Escríbenos y te enviamos disponibilidad y valores según tus
-                fechas.
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link
-                  href="/contact"
-                  className="rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-black hover:opacity-90"
-                >
-                  Contactar
-                </Link>
-
-                <Link
-                  href="/rooms"
-                  className="rounded-xl border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
-                >
-                  Ver habitaciones
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* LOCATION */}
+        <Location/>
       </main>
 
       <Footer />

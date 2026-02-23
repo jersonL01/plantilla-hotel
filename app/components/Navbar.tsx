@@ -41,8 +41,8 @@ export default function Navbar() {
           <Link href="/home#amenities" className={`${linkBase} ${linkUnderline}`}>
             Servicios
           </Link>
-          <Link href="/home#gallery" className={`${linkBase} ${linkUnderline}`}>
-            Galería
+          <Link href="/home#location" className={`${linkBase} ${linkUnderline}`}>
+            Ubicación
           </Link>
           <Link href="/contact" className={`${linkBase} ${linkUnderline}`}>
             Contacto
