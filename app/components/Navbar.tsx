@@ -22,10 +22,8 @@ export default function Navbar() {
   return (
     <header
       className={[
-        "sticky top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-white/90 backdrop-blur border-b shadow-sm"
-          : "bg-white/60 backdrop-blur border-b border-transparent",
+        "sticky top-0 z-50 backdrop-blur bg-white/90 transition-shadow duration-300",
+        scrolled ? "shadow-sm border-b" : "border-b border-transparent",
       ].join(" ")}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
@@ -37,7 +35,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <Link href="/home#rooms" className={`${linkBase} ${linkUnderline}`}>
+          <Link href="/rooms" className={`${linkBase} ${linkUnderline}`}>
             Habitaciones
           </Link>
           <Link href="/home#amenities" className={`${linkBase} ${linkUnderline}`}>
